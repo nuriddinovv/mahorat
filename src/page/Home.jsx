@@ -1,5 +1,5 @@
 import React from 'react'
-
+import LevelsImg from '../assets/levels-img.jpg'
 const Home = () => {
  
   return (
@@ -105,6 +105,13 @@ const Home = () => {
             </div>
            
           </div>
+        </div>
+      </section>
+      <section className='human-capital'>
+        <div className='container'>
+          <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>We strive to advance human capital</h1>
+          <p className='py-6 text-[#212529] text-2xl'>Non-governmental educational organization “Mahorat & Management” actively cooperates with state and non-state educational institutions and implements short and long term joint educational projects. It joins more than 20 experts nationwide, also 2-3 international experts which means it has capacity to act nationwide.</p>
+          <img src={LevelsImg}/>
         </div>
       </section>
     </div>
