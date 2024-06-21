@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,149 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #576ce3;
+  color: white;
+}
+
+.nav-link-item {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-item:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #F44749;
+  transition: .5s;
+}
+
+.nav-link-item:after {
+  left: 0;
+  bottom: -10px;
+}
+
+.nav-link-item:hover:after {
+  width: 100%;
+}
+
+.active {
+  color: #F44749;
+}
+
+.card-wrapper {
+  width: 50%;
+}
+
+.card-one {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.card-five {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.card-one::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/cefr-img.webp');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  z-index: -1;
+
+}
+
+.card-two::before {
+  background-image: url('./assets//news-img2.jpg');
+}
+
+.card-three::before {
+  background-image: url('./assets/news-img3.jpg');
+}
+
+.card-four::before {
+  background-image: url('./assets/news-img4.jpg');
+}
+
+.card-five::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/news-img5.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  z-index: -1;
+}
+
+.card-six::before{
+  background-image: url('./assets/news-img6.jpg');
+}
+.card-seven::before{
+  background-image: url('./assets/news-img7.jpg');
+}
+.card-one:hover{
+  cursor: pointer;
+}
+.card-five:hover{
+  cursor: pointer;
+}
+.card-one:hover::before {
+  background-size: 120%;
+}
+.card-five:hover::before {
+  background-size: 120%;
+}
+
+.card-content {
+  margin-top: 61%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
+  padding: 22px 15px;
+}
+
+.card-content2 {
+  margin-top: 56%;
+}
+
+.card-content3 {
+  margin-top: 52%;
+}
+.scrolled {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
