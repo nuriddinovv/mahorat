@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import Logo from '../assets/mahorat-logo.png'
+import Mahorat from '../assets/mahorat-tech.jpg'
+import Uztea from '../assets/UzTea.jpg'
+import Raled from '../assets/raled.jpg'
+import Goodly from '../assets/goodly.jpg'
 const RootLayout = () => {
     const [scrolled, setScrolled] = useState(false)
     useEffect(() => {
@@ -53,7 +57,25 @@ const RootLayout = () => {
                 </div>
             </nav>
             <Outlet />
-            <footer>footer</footer>
+            <footer>
+                <div className='container'>
+                    <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>Our Partners</h1>
+                    <div className='flex py-10 justify-between'>
+                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
+                                <img src={Mahorat} alt="mahorat-tech" />
+                        </div>
+                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
+                                <img src={Uztea} alt="mahorat-tech" />
+                        </div>
+                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
+                                <img src={Raled} alt="mahorat-tech" />
+                        </div>
+                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
+                                <img src={Goodly} alt="mahorat-tech" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }

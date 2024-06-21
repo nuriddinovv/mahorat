@@ -114,6 +114,61 @@ const Home = () => {
           <img src={LevelsImg}/>
         </div>
       </section>
+      <section className='our-projects'>
+        <div className='container'>
+          <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>Our Projects</h1>
+          <div className='flex items-start gap-8 py-10'>
+            <div className='card-wrapper'>
+              <div className='card-one card-eight'>
+                <div className='card-content flex flex-col items-start justify-end'>
+                  <div className='flex gap-2'>
+                    <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
+                  </div>
+                  <p className='text-3xl py-1 font-bold text-white'>ETF ‘Torino Process’ project</p>
+                </div>
+              </div>
+            </div>
+            <div className='card-text w-[50%]'>
+              <h2 className='font-bold text-3xl '>ETF ‘Torino Process’ project</h2>
+              <p className='text-[#212529] text-2xl py-3 font-normal'>Mahorat & Management has been cooperating with the European Education Foundation since May 2019 within the framework of the Torino Process project. It is known that Uzbekistan has been participating in the Torino Process since 2010 at the initiative of the European Training Foundation. The Torino process monitors political progress every two years, allowing partner countries to coordinate and assess their progress in vocational education and training reforms.</p>
+            </div>
+          </div>
+          <div className='flex items-start gap-8 py-10 border-t-2 border-b-2'>
+            <div className='card-text w-[50%]'>
+              <h2 className='font-bold text-3xl '>Journal Research in Adult Learning and Education (RALED)</h2>
+              <p className='text-[#212529] text-2xl py-3 font-normal'>The Adult Education and Research (RALED) journal encompasses lifelong learning, quality assurance and adult learning, in accordance with labor market requirements. This includes forms of education and upbringing aimed at ensuring the participation of adults in society. This journal of research and education is published by practitioners and researchers in Uzbekistan and can be a resource for adult learning and education management with the best practice in the world. RALED aims to provide a medium for informed discussion about the principles and practice which determine the methods of social capital in society. It also provides a forum for the exchange of information and ideas among practitioners and researchers worldwide.</p>
+            </div>
+            <div className='card-wrapper'>
+              <div className='card-one card-eight'>
+                <div className='card-content flex flex-col items-start justify-end'>
+                  <div className='flex gap-2'>
+                    <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
+                  </div>
+                  <p className='text-3xl py-1 font-bold text-white'>ETF ‘Torino Process’ project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex items-start gap-8 py-10'>
+            <div className='card-wrapper'>
+              <div className='card-one card-eight'>
+                <div className='card-content card-content2 flex flex-col items-start justify-end'>
+                  <div className='flex gap-2'>
+                    <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
+                  </div>
+                  <p className='text-3xl py-1 font-bold text-white'>Creating a regulatory framework of dual training system</p>
+                </div>
+              </div>
+            </div>
+            <div className='card-text w-[50%]'>
+              <h2 className='font-bold text-3xl '>Creating a regulatory framework of dual training system</h2>
+              <p className='text-[#212529] text-2xl py-3 font-normal'>The project "Creating an educational and regulatory framework and methodological support for the introduction of a dual training system in the system of vocational education" financed by grant funds from the government, which is implemented in partnership with Uzbekistan Teachers of English Association (UzTEA), Mahorat&Management and the Ministry of Higher and Secondary Specialized Education is an ongoing project.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='bodysection'>
+      </section>
     </div>
   )
 }

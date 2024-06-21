@@ -124,21 +124,34 @@ code {
   z-index: -1;
 }
 
-.card-six::before{
+.card-six::before {
   background-image: url('./assets/news-img6.jpg');
 }
-.card-seven::before{
+
+.card-seven::before {
   background-image: url('./assets/news-img7.jpg');
 }
-.card-one:hover{
+
+.card-eight::before {
+  background-image: url('./assets/process-img.jpg');
+}
+
+.card-nine::before {
+  background-image: url('./assets/raled-img.jpg');
+}
+
+.card-one:hover {
   cursor: pointer;
 }
-.card-five:hover{
+
+.card-five:hover {
   cursor: pointer;
 }
+
 .card-one:hover::before {
   background-size: 120%;
 }
+
 .card-five:hover::before {
   background-size: 120%;
 }
@@ -156,7 +169,25 @@ code {
 .card-content3 {
   margin-top: 52%;
 }
+
+.card-content4 {
+  margin-top: 54%;
+
+}
+
 .scrolled {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bodysection {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  background-image: url('../src/assets/bodyImg.jpg');
+}
+
+.partner-card{
+  background: linear-gradient(to right, #d3d3d3, #a9a9a9, #808080, #696969);
 }
