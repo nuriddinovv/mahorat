@@ -19,11 +19,13 @@ const RootLayout = () => {
     }, [])
     return (
         <div>
-            <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-50`}>
+            <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-50 bg-white`}>
                 <div className='container'>
                     <div className='nav-content flex items-center justify-between py-5'>
                         <div className='project-logo'>
+                            <NavLink to={'/'}>
                             <img src={Logo} alt="mahorat-logo" />
+                            </NavLink>
                         </div>
                         <div className='nav-links flex gap-7'>
                             <NavLink to={'/'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Home</NavLink>
@@ -31,8 +33,7 @@ const RootLayout = () => {
                             <NavLink to={'services'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Services</NavLink>
                             <NavLink to={'projects'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Projects</NavLink>
                             <NavLink to={'experts'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Experts</NavLink>
-                            <NavLink to={'projects'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Projects</NavLink>
-                            <NavLink to={'journal'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Journal</NavLink>
+                            <NavLink to={'journal'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Raled</NavLink>
                             <NavLink to={'contact'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Contact</NavLink>
                         </div>
                         <div className='nav-btn flex items-center gap-4'>
@@ -61,19 +62,22 @@ const RootLayout = () => {
                 <div className='container'>
                     <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>Our Partners</h1>
                     <div className='flex py-10 justify-between'>
-                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
-                                <img src={Mahorat} alt="mahorat-tech" />
+                        <div className='partner-cart bg-[#F1F1F1] border p-12 '>
+                            <img src={Mahorat} alt="mahorat-tech" />
                         </div>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
-                                <img src={Uztea} alt="mahorat-tech" />
+                            <img src={Uztea} alt="mahorat-tech" />
                         </div>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
-                                <img src={Raled} alt="mahorat-tech" />
+                            <img src={Raled} alt="mahorat-tech" />
                         </div>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
-                                <img src={Goodly} alt="mahorat-tech" />
+                            <img src={Goodly} alt="mahorat-tech" />
                         </div>
                     </div>
+                </div>
+                <div className='footer relative z-10'>
+                  <div className='overlay absolute z-20'></div>
                 </div>
             </footer>
         </div>

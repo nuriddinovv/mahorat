@@ -1,10 +1,69 @@
 import React from 'react'
 import LevelsImg from '../assets/levels-img.jpg'
+import bgVideo from '../assets/header-video.mp4'
+import HeaderImg1 from '../assets/header-img1.jpg'
+import HeaderImg2 from '../assets/header-img2.jpg'
+import HeaderImg3 from '../assets/header-img3.jpg'
+import {
+  Carousel,
+  initTWE,
+} from "tw-elements";
+
+initTWE({ Carousel });
 const Home = () => {
  
   return (
     <div>
-      <section className='news-and-events pt-[130px]'>
+      <section className='hero h-screen'>
+          <div className='hero-video h-screen pt-[370px]'>
+            <video autoPlay muted loop id="bg-video">
+              <source src={bgVideo} type="video/mp4" />
+            </video>
+          </div>
+          <div className='hero-content flex items-center'>
+          {/* <h1 className='text-4xl'>Human capital is the foundation of societal development</h1> */}
+          <div>
+
+            {/* <div
+              id="carouselExampleSlidesOnly"
+              class="relative"
+              data-twe-carousel-init
+              data-twe-ride="carousel">
+             
+              <div
+                class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                <div
+                  class="relative float-left -mr-[100%] w-full transition-transform duration-[60ms] ease-in-out motion-reduce:transition-none"
+                  data-twe-carousel-item
+                  data-twe-carousel-active>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                    class="block w-full"
+                    alt="Wild Landscape" />
+                </div>
+              
+                <div
+                  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  data-twe-carousel-item>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                    class="block w-full"
+                    alt="Camera" />
+                </div>
+                <div
+                  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                  data-twe-carousel-item>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                    class="block w-full"
+                    alt="Exotic Fruits" />
+                </div>
+              </div>
+            </div> */}
+          </div>
+          </div>
+      </section>
+      <section className='news-and-events pt-[280px]'>
         <div className='container'>
           <h2 className='text-center text-4xl font-bold pb-2 border-b-2 border-[#F44749]'>News and Events</h2>
           <div className='news-cards flex w-full mt-5 gap-5'>
@@ -133,13 +192,13 @@ const Home = () => {
               <p className='text-[#212529] text-2xl py-3 font-normal'>Mahorat & Management has been cooperating with the European Education Foundation since May 2019 within the framework of the Torino Process project. It is known that Uzbekistan has been participating in the Torino Process since 2010 at the initiative of the European Training Foundation. The Torino process monitors political progress every two years, allowing partner countries to coordinate and assess their progress in vocational education and training reforms.</p>
             </div>
           </div>
-          <div className='flex items-start gap-8 py-10 border-t-2 border-b-2'>
+          <div className='flex items-center gap-8 py-10 border-t-2 border-b-2'>
             <div className='card-text w-[50%]'>
               <h2 className='font-bold text-3xl '>Journal Research in Adult Learning and Education (RALED)</h2>
               <p className='text-[#212529] text-2xl py-3 font-normal'>The Adult Education and Research (RALED) journal encompasses lifelong learning, quality assurance and adult learning, in accordance with labor market requirements. This includes forms of education and upbringing aimed at ensuring the participation of adults in society. This journal of research and education is published by practitioners and researchers in Uzbekistan and can be a resource for adult learning and education management with the best practice in the world. RALED aims to provide a medium for informed discussion about the principles and practice which determine the methods of social capital in society. It also provides a forum for the exchange of information and ideas among practitioners and researchers worldwide.</p>
             </div>
             <div className='card-wrapper'>
-              <div className='card-one card-eight'>
+              <div className='card-one card-nine'>
                 <div className='card-content flex flex-col items-start justify-end'>
                   <div className='flex gap-2'>
                     <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
@@ -149,9 +208,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='flex items-start gap-8 py-10'>
+          <div className='flex items-center gap-8 pb-10'>
             <div className='card-wrapper'>
-              <div className='card-one card-eight'>
+              <div className='card-one card-ten'>
                 <div className='card-content card-content2 flex flex-col items-start justify-end'>
                   <div className='flex gap-2'>
                     <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
