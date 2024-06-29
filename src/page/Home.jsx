@@ -10,62 +10,57 @@ import {
 } from "tw-elements";
 
 initTWE({ Carousel });
+
 const Home = () => {
  
   return (
     <div>
-      <section className='hero h-screen'>
-          <div className='hero-video h-screen pt-[370px]'>
+      <section className='hero'>
+          <div className='hero-video pt-[370px]'>
             <video autoPlay muted loop id="bg-video">
               <source src={bgVideo} type="video/mp4" />
             </video>
           </div>
-          <div className='hero-content flex items-center'>
-          {/* <h1 className='text-4xl'>Human capital is the foundation of societal development</h1> */}
+          <div className='hero-content flex items-center h-full mt-[-1024px] px-[120px] pb-[240px] gap-4' >
+          <h1 className='text-[52px] text-white relative font-extrabold text-start '>Human capital is <br /> the foundation of societal <br /> development</h1>
           <div>
 
-            {/* <div
-              id="carouselExampleSlidesOnly"
-              class="relative"
-              data-twe-carousel-init
-              data-twe-ride="carousel">
-             
-              <div
-                class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                <div
-                  class="relative float-left -mr-[100%] w-full transition-transform duration-[60ms] ease-in-out motion-reduce:transition-none"
-                  data-twe-carousel-item
-                  data-twe-carousel-active>
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-                    class="block w-full"
-                    alt="Wild Landscape" />
+            <div id="carouselExampleRide" className="carousel slide w-[670px]" data-bs-ride="true">
+              <div className="carousel-inner">
+                <div className="carousel-item active w-[670px] h-[420px] carousel-item1" >
+                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5'>ETF ‘Torino Process’ project</h3>
+                  {/* <div className='ln-gr'></div> */}
                 </div>
-              
-                <div
-                  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                  data-twe-carousel-item>
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-                    class="block w-full"
-                    alt="Camera" />
+                <div className="carousel-item carousel-item2 w-[670px] h-[420px]">
+                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5 text-start'>Journal Research in Adult Learning and Education (RALED)</h3>
                 </div>
-                <div
-                  class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                  data-twe-carousel-item>
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-                    class="block w-full"
-                    alt="Exotic Fruits" />
+                <div className="carousel-item carousel-item3 w-[670px] h-[420px]">
+                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5 text-start'>Creating a regulatory framework of dual training system</h3>
                 </div>
               </div>
-            </div> */}
+              <div className='flex gap-0'>
+              <div className='h-full w-full items-end justify-end'>
+              <button className="carousel-control-prev bg-[#F3AF24] h-[60px] w-[60px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H3.707l10.147 10.146a.5.5 0 0 1-.708.708L3 3.707V8.5a.5.5 0 0 1-1 0z" />
+                </svg>
+              </button>
+              </div>
+              <div>
+                <button className="carousel-control-next bg-[#F44749] h-[60px] w-[60px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                </svg>
+              </button>
+              </div>
+              </div>
+            </div>
           </div>
           </div>
       </section>
-      <section className='news-and-events pt-[280px]'>
+      <section className='news-and-events mt-[-20px]'>
         <div className='container'>
-          <h2 className='text-center text-4xl font-bold pb-2 border-b-2 border-[#F44749]'>News and Events</h2>
+          <h2 className='text-center text-[56px] font-bold pb-2 border-b-2 border-[#F44749]'>News and Events</h2>
           <div className='news-cards flex w-full mt-5 gap-5'>
             <div className='card-wrapper'>
               <div className='card-one'>
@@ -110,7 +105,7 @@ const Home = () => {
             </div>
             <div className='card-wrapper'>
               <div className='card-one card-four'>
-                <div className='card-content flex flex-col items-start justify-end'>
+                <div className='card-content card-content4 flex flex-col items-start justify-end'>
                 <div className='flex gap-2'>
                   <button className='bg-[#DC3545] text-white rounded px-2 py-1 text-center'>News</button>
                     <div className='bg-[#F0F8FF] px-2 py-1 rounded font-bold text-[#DC3545]'>
@@ -168,18 +163,18 @@ const Home = () => {
       </section>
       <section className='human-capital'>
         <div className='container'>
-          <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>We strive to advance human capital</h1>
+          <h1 className='text-center text-[56px] font-bold border-b-2 border-[#F44749] py-5'>We strive to advance human capital</h1>
           <p className='py-6 text-[#212529] text-2xl'>Non-governmental educational organization “Mahorat & Management” actively cooperates with state and non-state educational institutions and implements short and long term joint educational projects. It joins more than 20 experts nationwide, also 2-3 international experts which means it has capacity to act nationwide.</p>
           <img src={LevelsImg}/>
         </div>
       </section>
       <section className='our-projects'>
         <div className='container'>
-          <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>Our Projects</h1>
+          <h1 className='text-center text-[56px] font-bold border-b-2 border-[#F44749] py-5'>Our Projects</h1>
           <div className='flex items-start gap-8 py-10'>
             <div className='card-wrapper'>
               <div className='card-one card-eight'>
-                <div className='card-content flex flex-col items-start justify-end'>
+                <div className='card-content card-content5 flex flex-col items-start justify-end'>
                   <div className='flex gap-2'>
                     <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
                   </div>
@@ -199,7 +194,7 @@ const Home = () => {
             </div>
             <div className='card-wrapper'>
               <div className='card-one card-nine'>
-                <div className='card-content flex flex-col items-start justify-end'>
+                <div className='card-content card-content5 flex flex-col items-start justify-end'>
                   <div className='flex gap-2'>
                     <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
                   </div>
@@ -211,7 +206,7 @@ const Home = () => {
           <div className='flex items-center gap-8 pb-10'>
             <div className='card-wrapper'>
               <div className='card-one card-ten'>
-                <div className='card-content card-content2 flex flex-col items-start justify-end'>
+                <div className='card-content card-content6 card-content2 flex flex-col items-start justify-end'>
                   <div className='flex gap-2'>
                     <button className='bg-[#198754] text-white rounded px-2 py-1 text-center'>Projects</button>
                   </div>

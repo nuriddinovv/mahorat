@@ -6,7 +6,6 @@ import About from '../page/About'
 import Services from '../page/Services'
 import Projects from '../page/Projects'
 import Experts from '../page/Experts'
-import Journal from '../page/Journal'
 import Contact from '../page/Contact'
 
 const RouteComponent = () => {
@@ -20,7 +19,6 @@ const RouteComponent = () => {
             <Route path='services' element={<Services />} />
             <Route path='projects' element={<Projects />} />
             <Route path='experts' element={<Experts />} />
-            <Route path='journal' element={<Journal/>}/>
             <Route path='contact' element={<Contact/>}/>
           </Route>
         </Routes>

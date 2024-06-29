@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
-import Logo from '../assets/mahorat-logo.png'
+import Logo from '../assets/logo.png'
 import Mahorat from '../assets/mahorat-tech.jpg'
 import Uztea from '../assets/UzTea.jpg'
 import Raled from '../assets/raled.jpg'
 import Goodly from '../assets/goodly.jpg'
+import FacebookSvg from '../assets/icons/FacebookSvg'
+import InstagrammSvg from '../assets/icons/InstagrammSvg'
+import TelegramSvg from '../assets/icons/TelegramSvg'
+import YouTubeSvg from '../assets/icons/YouTubeSvg'
 const RootLayout = () => {
     const [scrolled, setScrolled] = useState(false)
     useEffect(() => {
@@ -21,10 +25,10 @@ const RootLayout = () => {
         <div>
             <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-50 bg-white`}>
                 <div className='container'>
-                    <div className='nav-content flex items-center justify-between py-5'>
+                    <div className='nav-content flex items-center justify-between'>
                         <div className='project-logo'>
                             <NavLink to={'/'}>
-                            <img src={Logo} alt="mahorat-logo" />
+                                <img className='h-auto max-w-[180px] max-h-[115px]' src={Logo} alt="mahorat-logo" />
                             </NavLink>
                         </div>
                         <div className='nav-links flex gap-7'>
@@ -33,7 +37,7 @@ const RootLayout = () => {
                             <NavLink to={'services'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Services</NavLink>
                             <NavLink to={'projects'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Projects</NavLink>
                             <NavLink to={'experts'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Experts</NavLink>
-                            <NavLink to={'journal'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Raled</NavLink>
+                            <a className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'} href="#" target='_blank'>Raled</a>
                             <NavLink to={'contact'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Contact</NavLink>
                         </div>
                         <div className='nav-btn flex items-center gap-4'>
@@ -60,7 +64,7 @@ const RootLayout = () => {
             <Outlet />
             <footer>
                 <div className='container'>
-                    <h1 className='text-center text-4xl font-bold border-b-2 border-[#F44749] py-5'>Our Partners</h1>
+                    <h1 className='text-center text-[56px] font-bold border-b-2 border-[#F44749] py-5'>Our Partners</h1>
                     <div className='flex py-10 justify-between'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12 '>
                             <img src={Mahorat} alt="mahorat-tech" />
@@ -76,8 +80,51 @@ const RootLayout = () => {
                         </div>
                     </div>
                 </div>
-                <div className='footer relative z-10'>
-                  <div className='overlay absolute z-20'></div>
+                <div>
+                    <div className='footer relative z-10'>
+                        <div className='overlay absolute z-20'>
+
+                            <div className='footer-content h-full'>
+                                <div className='container'>
+                                    <h2 className='text-white font-bold text-[26px] tracking-wider pt-5 pb-14'>Mahorat & Management</h2>
+                                    <div className='flex justify-between'>
+                                        <div>
+                                            <p className='text-white font-bold text-xl pb-3'>Location</p>
+                                            <p className='text-[#AAAAAA] text-lg py-2 font-light'>Safdosh Street, 10</p>
+                                            <p className='text-[#AAAAAA] text-lg font-light pb-4'>Tashkent, Uzbekistan</p>
+                                            <a className='bg-[#212529] text-[#AAAAAA] px-3 py-2.5 rounded text-lg' href="https://yandex.uz/maps/10335/tashkent/house/YkAYdANhSEwHQFprfX52dn5lZg==/?ll=69.242193%2C41.277415&utm_source=share&z=18" target='_blank'>Direction</a>
+                                        </div>
+                                        <div>
+                                            <p className='text-white font-bold text-xl pb-3'>Opening Hours</p>
+                                            <p className='text-[#AAAAAA] text-lg py-2 font-light'>Monday - Friday</p>
+                                            <p className='text-[#AAAAAA] text-lg font-light pb-3'>10:00 AM - 08:00 PM</p>
+                                            <p className='text-[#AAAAAA] text-lg font-light'>Tel:<span className='cursor-pointer hover:text-white hover:underline duration-500'>+998 95 195-00-55</span></p>
+                                        </div>
+                                        <div>
+                                            <p className='text-white font-bold text-xl pb-3'>Social</p>
+                                            <div className='flex gap-3'>
+                                            <a className='text-[#AAAAAA] text-lg py-2 font-light' href='https://www.facebook.com/watch/mahoratLC/'>
+                                                <FacebookSvg/>
+                                            </a>
+                                            <a className='text-[#AAAAAA] text-lg py-2 font-light' href='https://www.instagram.com/mahoratmanagement/'>
+                                                <InstagrammSvg/>
+                                            </a>
+                                            <a className='text-[#AAAAAA] text-lg py-2 font-light' href='https://t.me/mahorat_management'>
+                                                <TelegramSvg/>
+                                            </a>
+                                            <a className='text-[#AAAAAA] text-lg py-2 font-light' href='https://www.youtube.com/channel/UC5a9BbxxGgeOJaZ2wdA9-xg'>
+                                                <YouTubeSvg/>
+                                            </a>
+                                            </div>
+                                            <p className='text-[#AAAAAA] text-lg font-light pt-24'>© 2022 Mahorat & Management. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* <div className='footer-bg'></div> */}
                 </div>
             </footer>
         </div>
