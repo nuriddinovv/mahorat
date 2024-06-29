@@ -322,10 +322,19 @@ code {
   background-size: cover;
 }
 
-
-/* .ln-gr {
-  width: 100%;
-  height: 50px;
-  margin-top: 65%;
+.carousel-shadow{
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
+      position: relative;
+      z-index: 3;
+}
+.hero-shadow{
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
-} */
+  position: relative;
+  z-index: 20;
+  max-width: 100vw;
+  width: 100%;
+  height: 100px;
+}
+.service-card{
+    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.61);
+}

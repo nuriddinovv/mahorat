@@ -39,15 +39,15 @@ const Home = () => {
                 </div>
               </div>
               <div className='flex gap-0'>
-              <div className='h-full w-full items-end justify-end'>
-              <button className="carousel-control-prev bg-[#F3AF24] h-[60px] w-[60px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <div className='z-10'>
+              <button className="carousel-control-prev bg-[#F3AF24] h-[60px] w-[60px] mt-[360px] ml-[550px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-left" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H3.707l10.147 10.146a.5.5 0 0 1-.708.708L3 3.707V8.5a.5.5 0 0 1-1 0z" />
                 </svg>
               </button>
               </div>
-              <div>
-                <button className="carousel-control-next bg-[#F44749] h-[60px] w-[60px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <div className='z-10'>
+                <button className="carousel-control-next bg-[#F44749] h-[60px] w-[60px] mt-[360px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
@@ -55,8 +55,11 @@ const Home = () => {
               </div>
               </div>
             </div>
+            <div className='carousel-shadow mt-[-99px] w-[670px] h-[100px]'>
+            </div>
           </div>
           </div>
+          <div className='hero-shadow mt-[-164px] mb-[63px]'></div>
       </section>
       <section className='news-and-events mt-[-20px]'>
         <div className='container'>
