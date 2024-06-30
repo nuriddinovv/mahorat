@@ -280,7 +280,7 @@ code {
 .about {
   background-image: url('./assets/about-header-img.jpg');
   background-repeat: no-repeat;
-  /* background-size: 100%; */
+  background-position: center;
 }
 
 .about-bg-wrapper {
