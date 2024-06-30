@@ -338,3 +338,14 @@ code {
 .service-card{
     box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.61);
 }
+.we-about{
+  background-image: url('./assets/about-img1.jpg');
+}
+.our-goal{
+  background-image: url('./assets/about-img2.jpg');
+  background-size: cover;
+  max-width: 100vw;
+}
+.our-goal-textBg{
+  background-color: rgba(0, 0, 0, 0.5);
+}
