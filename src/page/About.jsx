@@ -1,4 +1,5 @@
 import React from 'react'
+import NoteIconSvg from '../assets/icons/NoteIconSvg'
 const About = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const About = () => {
         </div>
       </section>
       <section>
-        <div className='container'>
+        <div className='container pb-5'>
           <h1 className='text-center py-3 font-bold text-[56px] border-b-[3px] border-b-[#FF0000]'>WHO WE ARE?</h1>
           <div className='flex gap-3 pt-5 items-start'>
             <div className='w-6/12 bg-cover min-h-[880px] we-about'>
@@ -32,9 +33,68 @@ const About = () => {
         </div>
         <div className='our-goal py-16'>
           <div className='container'>
-          <div className='our-goal-textBg w-8/12 py-20 px-20'>
+            <div className='our-goal-textBg w-8/12 py-20 px-20'>
               <h3 className='text-[28px] font-bold text-white leading-relaxed'>Our mission is to unite and build the capacity of experts in order to improve the mechanisms and systems of vocational education, based on international quality indicators and the requirements of the international labor market.</h3>
+            </div>
           </div>
+        </div>
+        <div className='our-plan py-5'>
+          <div className='container'>
+            <div className='flex items-center gap-3'>
+              <div className='w-8/12'>
+                <h2 className='font-bold text-[28px] '>We aim towards realizing the following key components:</h2>
+                <div className='bg-[#D5E9F6] border-[3px] border-white about-card my-3'>
+                  <p className='text-[18px] font-light px-4 py-3 tracking-wider'>
+                    <b className='text-[20px] font-bold'>EDUCATIONAL </b> - to develop high-quality education, to assist the professional development of managers and teachers, professional development and retraining of highly qualified specialists based on the principle of LLL;
+                  </p>
+                  <div className='info-tab note-icon'>
+                    <i className='flex justify-center mt-[20%]'>
+                      <NoteIconSvg />
+                    </i>
+                  </div>
+                </div>
+                <div className='bg-[#D5E9F6] border-[3px] border-white about-card my-4'>
+                  <p className='text-[18px] font-light px-4 py-3 tracking-wider'>
+                    <b className='text-[20px] font-bold'>CULTURAL </b> - to be a cultural educational center, contributing to a change in the social environment, creating a certain spiritual atmosphere, teaching intelligent and constructive problem solving;
+                  </p>
+                  <div className='info-tab note-icon'>
+                    <i className='flex justify-center mt-[20%]'>
+                      <NoteIconSvg />
+                    </i>
+                  </div>
+                </div>
+                <div className='bg-[#D5E9F6] border-[3px] border-white about-card my-4'>
+                  <p className='text-[18px] font-light px-4 py-3 tracking-wider'>
+                    <b className='text-[20px] font-bold'>INNOVATIVE </b> - Ensuring inclusive and equal quality education, supporting life-long learning opportunities for all, using new methods and technologies in retraining and professional development of specialists, developing their innovative thinking;
+                  </p>
+                  <div className='info-tab note-icon mt-[-27px]'>
+                    <i className='flex justify-center mt-[20%]'>
+                      <NoteIconSvg />
+                    </i>
+                  </div>
+                </div>
+                <div className='bg-[#D5E9F6] border-[3px] border-white about-card my-4'>
+                  <p className='text-[18px] font-light px-4 py-3 tracking-wider'>
+                    <b className='text-[20px] font-bold'>CONSTRUCTIVE  </b> - we build a constructive partnership with the local governmental and nongovernmental organizations and individuals according to their interest in a partnership in HRD.
+                  </p>
+                  <div className='info-tab note-icon'>
+                    <i className='flex justify-center mt-[20%]'>
+                      <NoteIconSvg />
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div className='about-img3BG w-4/12'></div>
+            </div>
+            <h1 className='text-center pt-14 pb-2 font-bold text-[56px] border-b-[3px] border-b-[#FF0000]'>How We Work</h1>
+            <p className='font-light text-[24px] pt-4'>Our strategy for sustainable development is based on the UNESCO Declaration - Education 2030: Achieving Inclusive and Equitable Quality Education and Lifelong Learning for All. In order to realize this strategy the organization regularly runs following projects:</p>
+            <div>
+              <div className='flex items-center'>
+                <div className='about-card1 w-6/12'>
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

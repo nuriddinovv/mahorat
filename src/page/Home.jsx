@@ -21,7 +21,8 @@ const Home = () => {
               <source src={bgVideo} type="video/mp4" />
             </video>
           </div>
-          <div className='hero-content flex items-center h-full mt-[-1024px] px-[120px] pb-[240px] gap-4' >
+        <div className='container'>
+          <div className='hero-content flex items-center h-full mt-[-1024px] pb-[240px] gap-4' >
           <h1 className='text-[52px] text-white relative font-extrabold text-start '>Human capital is <br /> the foundation of societal <br /> development</h1>
           <div>
 
@@ -60,6 +61,7 @@ const Home = () => {
           </div>
           </div>
           <div className='hero-shadow mt-[-164px] mb-[63px]'></div>
+        </div>
       </section>
       <section className='news-and-events mt-[-20px]'>
         <div className='container'>

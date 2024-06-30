@@ -183,9 +183,11 @@ code {
 .card-content4 {
   margin-top: 60%;
 }
+
 .card-content5 {
   margin-top: 61%;
 }
+
 .card-content6 {
   margin-top: 55%;
 }
@@ -236,6 +238,7 @@ code {
   height: 400px;
 
 }
+
 .footer-content {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
 }
@@ -313,21 +316,24 @@ code {
   background-image: url('./assets/header-img2.jpg');
   background-size: cover;
 }
-.carousel-item2{
+
+.carousel-item2 {
   background-image: url('./assets/header-img1.jpg');
   background-size: cover;
 }
-.carousel-item3{
+
+.carousel-item3 {
   background-image: url('./assets/header-img3.jpg');
   background-size: cover;
 }
 
-.carousel-shadow{
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
-      position: relative;
-      z-index: 3;
+.carousel-shadow {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
+  position: relative;
+  z-index: 3;
 }
-.hero-shadow{
+
+.hero-shadow {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.9));
   position: relative;
   z-index: 20;
@@ -335,17 +341,114 @@ code {
   width: 100%;
   height: 100px;
 }
-.service-card{
-    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.61);
+
+.service-card {
+  box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.61);
 }
-.we-about{
+
+.we-about {
   background-image: url('./assets/about-img1.jpg');
 }
-.our-goal{
+
+.our-goal {
   background-image: url('./assets/about-img2.jpg');
   background-size: cover;
   max-width: 100vw;
 }
-.our-goal-textBg{
+
+.our-goal-textBg {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-card {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)
+}
+
+.about-img3BG {
+  background-image: url('./assets/about-img3.jpg');
+  background-size: cover;
+  height: 635px;
+}
+
+.note-icon {
+  background: #47ADE0;
+}
+
+.info-tab {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  top: -104px;
+}
+.info-tab {
+  float: left;
+  margin-left: -23px;
+}
+/* .note-icon::before {
+  font-size: 23px;
+  content: "\e911";
+  top: 8px;
+  left: 8px;
+} */
+/* .info-tab::before,
+.info-tab::after {
+  display: inline-block;
+  color: #fff;
+  line-height: normal;
+  font-family: "icomoon";
+  position: absolute;
+} */
+
+.note-icon i::before {
+  background: #1d7ead;
+}
+.info-tab i::before {
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5);
+}
+.info-tab i::before,
+.info-tab i::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  transform: rotateX(60deg);
+}
+.info-tab i::after {
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  bottom: -18px;
+}
+/* .info-tab i::before,
+.info-tab i::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  transform: rotateX(60deg);
+} */
+/* .note-icon::after {
+  font-size: 17px;
+  content: "\e912";
+  top: 9px;
+  left: 19px;
+} */
+/* .info-tab::before,
+.info-tab::after {
+  display: inline-block;
+  color: #fff;
+  line-height: normal;
+  font-family: "icomoon";
+  position: absolute;
+} */
+.about-card1{
+  background-image: url('./assets/about-card-bg1.png');
+  background-size: cover;
 }
