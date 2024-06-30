@@ -368,6 +368,7 @@ code {
   background-image: url('./assets/about-img3.jpg');
   background-size: cover;
   height: 635px;
+  background-position: center;
 }
 
 .note-icon {
@@ -381,10 +382,12 @@ code {
   position: relative;
   top: -104px;
 }
+
 .info-tab {
   float: left;
   margin-left: -23px;
 }
+
 /* .note-icon::before {
   font-size: 23px;
   content: "\e911";
@@ -403,11 +406,13 @@ code {
 .note-icon i::before {
   background: #1d7ead;
 }
+
 .info-tab i::before {
   width: 20px;
   height: 20px;
   box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5);
 }
+
 .info-tab i::before,
 .info-tab i::after {
   content: "";
@@ -417,6 +422,7 @@ code {
   bottom: -15px;
   transform: rotateX(60deg);
 }
+
 .info-tab i::after {
   width: 0;
   height: 0;
@@ -425,6 +431,7 @@ code {
   border-left-color: #fff;
   bottom: -18px;
 }
+
 /* .info-tab i::before,
 .info-tab i::after {
   content: "";
@@ -448,7 +455,33 @@ code {
   font-family: "icomoon";
   position: absolute;
 } */
-.about-card1{
+.about-card1 {
   background-image: url('./assets/about-card-bg1.png');
   background-size: cover;
+}
+
+.disc-list {
+  list-style-type: disc;
+}
+
+.about-card2 {
+  background-image: url('./assets//about-card-bg2.png');
+  background-size: cover;
+}
+
+.card-image {
+  background-image: url('./assets/cardImg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image2 {
+  background-image: url('./assets/cardImg2.png');
+  background-size: cover;
+  background-position: center;
+}
+.card-image3 {
+  background-image: url('./assets/cardImg3.jpg');
+  background-size: cover;
+  background-position: center;
 }

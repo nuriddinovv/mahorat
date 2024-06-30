@@ -1,5 +1,8 @@
 import React from 'react'
 import NoteIconSvg from '../assets/icons/NoteIconSvg'
+import CardImg1 from '../assets/cardImg.jpg'
+import CardImg2 from '../assets/cardImg2.png'
+import CardImg3 from '../assets/cardImg3.jpg'
 const About = () => {
   return (
     <div>
@@ -88,10 +91,34 @@ const About = () => {
             </div>
             <h1 className='text-center pt-14 pb-2 font-bold text-[56px] border-b-[3px] border-b-[#FF0000]'>How We Work</h1>
             <p className='font-light text-[24px] pt-4'>Our strategy for sustainable development is based on the UNESCO Declaration - Education 2030: Achieving Inclusive and Equitable Quality Education and Lifelong Learning for All. In order to realize this strategy the organization regularly runs following projects:</p>
+            
             <div>
-              <div className='flex items-center'>
-                <div className='about-card1 w-6/12'>
-                  <h3></h3>
+              <div className='flex items-center pt-4 gap-4'>
+                <div className='about-card1 w-6/12 box-border px-8 pt-3 pb-16'>
+                  <a href="#" className='font-semibold text-[26px] hover:underline'>Participation in tenders</a>
+                  <p className='font-light text-[18px] py-1'>Participation in tenders for social order to improve the systems of vocational education and training at all levels (ISCED and ISCO):</p>
+                  <ul className='disc-list text-[17px] px-4'>
+                    <li>Management of the educational process</li>
+                    <li>Recognition of prior learning (RPL)</li>
+                    <li>Systematization, automation and launching of educational processes and systems.</li>
+                  </ul>
+                </div>
+                <div className='about-card2 w-6/12 box-border px-8 pt-3 pb-4'>
+                  <a href="#" className='font-semibold text-[26px] hover:underline'>Outsourcing services</a>
+                  <p className='font-light text-[18px] py-1 pb-5'>Outsourcing services in certain areas of vocational education and training (VET) and professional development and retraining (CPD-Continuing professional development). RPL - Recognition of Prior Learning.</p>
+                <div className='card-image w-full h-[70px]'></div>
+                </div>
+              </div>
+              <div className='flex items-center pt-4 gap-4'>
+                <div className='about-card1 w-6/12 box-border px-8 pt-3 pb-4'>
+                  <a href="#" className='font-semibold text-[26px] hover:underline'>Exchange programs</a>
+                  <p className='font-light text-[18px] py-1 pb-5'>Organization of exchange programs between educators, researchers, and supervisors.</p>
+                  <div className='card-image2 w-full h-[70px]'></div>
+                </div>
+                <div className='about-card2 w-6/12 box-border px-8 pt-3 pb-4'>
+                  <a href="#" className='font-semibold text-[26px] hover:underline'>Support for youth initiatives</a>
+                  <p className='font-light text-[18px] py-1 pb-5'>Support for youth initiatives aimed at the welfare of the population, by building the capacity of human capital.</p>
+                <div className='card-image3 w-full h-[70px]'></div>
                 </div>
               </div>
             </div>
