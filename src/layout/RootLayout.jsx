@@ -67,22 +67,22 @@ const RootLayout = () => {
                     <h1 className='text-center text-[56px] font-bold border-b-2 border-[#F44749] py-5'>Our Partners</h1>
                     
                     <div className='flex py-10 justify-between'>
-                        <a href="#">
+                        <a href="https://mahorat.tech/" target='_blank'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12 '>
                             <img src={Mahorat} alt="mahorat-tech" />
                         </div>
                         </a>
-                        <a href="#">
+                        <a href="https://www.uztea.uz/" target='_blank'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
                             <img src={Uztea} alt="mahorat-tech" />
                         </div>
                         </a>
-                        <a href="#">
+                        <a href="https://raled-eight.vercel.app/" target='_blank'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
                             <img src={Raled} alt="mahorat-tech" />
                         </div>
                         </a>
-                        <a href="#">
+                        <a href="#" target='_blank'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12'>
                             <img src={Goodly} alt="mahorat-tech" />
                         </div>

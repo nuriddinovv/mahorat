@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <section className='hero'>
-          <div className='hero-video pt-[370px]'>
+          <div className='hero-video pt-[25%]'>
             <video autoPlay muted loop id="bg-video">
               <source src={bgVideo} type="video/mp4" />
             </video>
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div className='hero-shadow mt-[-164px] mb-[63px]'></div>
+          {/* <div className='hero-shadow mt-[-164px] mb-[63px]'></div> */}
         </div>
       </section>
       <section className='news-and-events mt-[-20px]'>
