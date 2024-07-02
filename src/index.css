@@ -485,3 +485,7 @@ code {
   background-size: cover;
   background-position: center;
 }
+.contact-img{
+  background-image: url('./assets/contact-img.png');
+  background-size: cover;
+}
