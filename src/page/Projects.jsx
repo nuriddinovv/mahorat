@@ -14,6 +14,7 @@ import DaryaImg from '../assets/darya.jpg'
 import UzTeaIconSvg from '../assets/icons/UzTeaIconSvg'
 import UzteaImg from '../assets/UzTea.jpg'
 import QuoteSvg from '../assets/icons/QuoteSvg'
+import AccordionComponent from '../components/Accordion'
 const Projects = () => {
   return (
     <div>
@@ -47,7 +48,7 @@ const Projects = () => {
                   <p>Retraining and advanced training courses for adults</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" className="accordion-collapse show">
+              <div id="panelsStayOpen-collapseOne" className=" show">
                 <div className="accordion-body">
                   <div className='flex gap-3'>
                     <img className='w-[615px]' src={MahoratTraining} alt='mahorat-training' />
@@ -74,43 +75,9 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  <Icon1Svg />
-                  <p>Retraining and advanced training courses for adults</p>
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" className="accordion-collapse show">
-                <div className="accordion-body">
-                  <div className='flex gap-3'>
-                    <img className='w-[615px]' src={MahoratTraining} alt='mahorat-training' />
-                    <p className='text-[20px] font-light'>Today, the number of participants in the program exceeds 600 people, for whom online trainings are regularly organized with the participation of qualified teachers and psychologists. To improve the professional competency of managers and teachers in the field of education (teachers of all categories, methodologists, assessors, trainers, researchers and specialists) in accordance with the levels of International Standard Classification of Education since 2018 Mahorat & Management implementing a Program “Continuing Professional Development Program for Educators” that serves as a "road map" for managers and teachers to improve their professional skills from primary level to international expert level.</p>
-                  </div>
-                  <p className='text-[20px] font-light'>The CPD "Road map" includes: Based on this Program managers / teachers improve their skills on the basis of the principle of lifelong learning at 4 levels:</p>
-                  <p className='flex items-center gap-1 font-medium text-xl py-1'>
-                    <CheckSvg />
-                    Foundation level
-                  </p>
-                  <p className='flex items-center gap-1 font-medium text-xl'>
-                    <CheckSvg />
-                    Developing level
-                  </p>
-                  <p className='flex items-center gap-1 font-medium text-xl py-1'>
-                    <CheckSvg />
-                    Expert level
-                  </p>
-                  <p className='flex items-center gap-1 font-medium text-xl'>
-                    <CheckSvg />
-                    National Expert at International Level
-                  </p>
-                  <p className='text-[20px] font-light pt-3'>Each level consists of 5 modules which equals a total of 180 hours of trainings. The total volume of practical and theoretical training on 4 qualification levels is 720 hours. An individual (pedagogues, managers) who successfully passes each level is awarded a Certificate of Achievement, which indicates their level of qualification in their working sphere.</p>
-                </div>
-              </div>
-            </div> */}
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
                   <Icon2Svg />
                   <p>Journal Research in Adult Learning and Education (RALED)</p>
                 </button>
@@ -152,7 +119,7 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
                   <ExpertsSvg />
                   <p>Senior Experts Service (SES)</p>
                 </button>
@@ -165,12 +132,12 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
                   <ReformsIconSvg />
                   <p>VET Reforms Project (SVRP) in Uzbekistan</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" className="accordion-collapse  show">
+              <div id="panelsStayOpen-collapseFour" className="accordion-collapse  show">
                 <div className="accordion-body">
                   <p className='text-[20px] font-light'>Assistance to ‘Support to VET Reforms Project (SVRP) in Uzbekistan’ for conducting Governance Survey. Mahorat & Management is supporting the SVRP to conduct during April-July, 2022 a survey into the quality of VET governance in Uzbekistan. The survey aims to evaluate VET governance according to key functions of the VET system. The results from this study can be used to recommend changes to specific dimensions of governance. The survey will be digitally managed by SVRP partner CEMETS in Switzerland, but it needs preparation and follow-up on the ground in Uzbekistan.
                   </p>
@@ -181,12 +148,12 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
                   <SearchSvg />
                   <p>ETF 'Civil Society organization and Human Capital Development'</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" className="accordion-collapse  show">
+              <div id="panelsStayOpen-collapseFive" className="accordion-collapse  show">
                 <div className="accordion-body">
                   <div className='flex gap-3 items-start pt-2'>
                     <img className='w-[615px]' src={CivilImg} alt='civil image' />
@@ -211,12 +178,12 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
                   <SearchSvg />
                   <p>ETF 'Civil Society organization and Human Capital Development'</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" className="accordion-collapse  show">
+              <div id="panelsStayOpen-collapseSix" className="accordion-collapse  show">
                 <div className="accordion-body">
                   <div className='flex gap-3 items-start pt-2'>
                     <img className='w-[615px]' src={TorinoImg} alt='civil image' />
@@ -229,12 +196,12 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
                   <DaryaIconSvg />
                   <p>ETF 'Mission and consultations including DARYA Action'</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" className="accordion-collapse  show">
+              <div id="panelsStayOpen-collapseSeven" className="accordion-collapse  show">
                 <div className="accordion-body">
                   <div className='flex gap-3 items-start pt-2'>
                     <img className='w-[269px]' src={DaryaImg} alt='civil image' />
@@ -247,12 +214,12 @@ const Projects = () => {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className="accordion-button font-semibold text-black text-[28px] flex gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true" aria-controls="panelsStayOpen-collapseEight">
                   <UzTeaIconSvg />
                   <p>Conducting events (conferences / workshops / webinars)</p>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" className="accordion-collapse  show">
+              <div id="panelsStayOpen-collapseEight" className="accordion-collapse  show">
                 <div className="accordion-body">
                   <div className='bg-[#FFF4ED] w-full px-5 py-3 my-3'>
                     <div className='flex items-center'>
@@ -300,6 +267,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          {/* <AccordionComponent/> */}
         </div>
       </div>
     </div>

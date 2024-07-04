@@ -42,12 +42,22 @@ const Contact = () => {
             </div>
           </div>
           <div className='flex items-center justify-between'>
-            <div className='bg-[#E8EDF0]'>
+            <div className='bg-[#E8EDF0] py-5 px-5'>
               <form action="">
-                <h2>Contact Us</h2>
+                <h2 className='text-[42px] font-semibold'>Contact Us</h2>
+                <div className='flex gap-4 items-center'>
+                  <div>
+                  <label htmlFor="fullName">FULL NAME</label> <br />
+                  <input type="text" id='fullName' name='fullName' placeholder='FULL NAME'/>
+                  </div>
+                  <div>
+                  <label htmlFor="fullName">FULL NAME</label> <br />
+                  <input type="text" id='fullName' name='fullName' placeholder='FULL NAME'/>
+                  </div>
+                </div>
                 <div>
-                  <label htmlFor="">FULL NAME</label>
-                  <input type="text" placeholder='FULL NAME'/>
+                  <label htmlFor="subject">SUBJECT</label>
+                  <input type="text" placeholder='Subject' />
                 </div>
               </form>
             </div>

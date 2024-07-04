@@ -489,3 +489,6 @@ code {
   background-image: url('./assets/contact-img.png');
   background-size: cover;
 }
+.collapse{
+  visibility: visible;
+}
