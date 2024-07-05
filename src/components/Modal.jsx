@@ -5,12 +5,12 @@ const Modal = ({ setShowModal }) => {
         setShowModal(false)
     }
     return (
-        <div className='max-w-screen w-full min-h-screen h-full modalBg fixed'>
-            <div className='flex justify-center py-2'>
-                <div className='border-2 px-10 py-3 bg-white rounded absolute z-50 w-9/12'>
+        <div className='max-w-screen w-full min-h-screen h-full modalBg fixed overflow-y-scroll'>
+            <div className='flex justify-center py-4'>
+                <div className='border-2 px-10 py-4 bg-white rounded absolute z-50 w-9/12'>
                     <div className='flex items-center justify-between w-full'>
                         <h3 className='text-[38px] font-semibold'>Join us</h3>
-                        <button className='px-2 text-[#7F7F7F] text-[26px] font-medium' onClick={closeModal}>x</button>
+                        <button className='px-2.5 text-[#7F7F7F] rounded-full text-[26px] font-medium hover:bg-[#c4c8c8] hover:text-white duration-300' onClick={closeModal}>x</button>
                     </div>
                     <p className='py-4 text-[20.8px] font-light'>Please fill out the application form to join our Experts team.</p>
                     <form action="">
@@ -107,13 +107,20 @@ const Modal = ({ setShowModal }) => {
                         </div>
                         <div>
                             <label className='text-[#717275] text-[17px] font-semibold pt-3 pb-2' htmlFor="radio">Preferred project duration</label> <br />
-                            <input type="radio" /> <label htmlFor="">Short term</label> <br />
-                            <input type="radio" /> <label htmlFor="">Long term</label> <br />
+                            <label>
+                                <input type="radio" name="gender" value="short" /> Short term
+                            </label> <br />
+                            <label>
+                                <input type="radio" name="gender" value="long" /> Long term
+                            </label>
                         </div>
-                        {/* <div>
-                            <label htmlFor="" className='text-[#717275] text-[17px] font-semibold pb-2'>Special Request</label>
-                            <textarea className='form-control' name="" id=""></textarea>
-                        </div> */}
+                        <div>
+                            <label htmlFor="" className='text-[#717275] text-[17px] font-semibold py-3 pb-2'>Special Request</label>
+                            <textarea className='form-control h-[150px]' name="" id=""></textarea>
+                        </div>
+                        <div className='flex justify-end py-4'>
+                            <button className='bg-black text-white px-24 font-semibold py-2 rounded hover:bg-[#F44749]'>SUBMIT</button>
+                        </div>
                     </form>
                 </div>
             </div>

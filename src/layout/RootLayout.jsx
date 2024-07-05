@@ -10,6 +10,7 @@ import InstagrammSvg from '../assets/icons/InstagrammSvg'
 import TelegramSvg from '../assets/icons/TelegramSvg'
 import YouTubeSvg from '../assets/icons/YouTubeSvg'
 import Modal from '../components/Modal'
+import Deepen from '../assets/deepen.png'
 const RootLayout = () => {
     const [scrolled, setScrolled] = useState(false)
     const [showModal, setShowModal] = useState(false)
@@ -89,8 +90,8 @@ const RootLayout = () => {
                         </div>
                         </a>
                         <a href="#" target='_blank'>
-                        <div className='partner-cart bg-[#F1F1F1] border p-12'>
-                            <img src={Goodly} alt="mahorat-tech" />
+                        <div className='partner-cart bg-[#F1F1F1] border p-12 h-[233px] flex justify-center items-center'>
+                            <img width={200} className='mt-[33px]' src={Deepen} alt="mahorat-tech" />
                         </div>
                         </a>
                     </div>

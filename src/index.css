@@ -214,7 +214,7 @@ code {
 
 .partner-cart img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   filter: grayscale(100%);
   transition: all 0.3s;
