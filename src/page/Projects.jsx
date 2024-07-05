@@ -14,7 +14,6 @@ import DaryaImg from '../assets/darya.jpg'
 import UzTeaIconSvg from '../assets/icons/UzTeaIconSvg'
 import UzteaImg from '../assets/UzTea.jpg'
 import QuoteSvg from '../assets/icons/QuoteSvg'
-import AccordionComponent from '../components/Accordion'
 const Projects = () => {
   return (
     <div>
