@@ -45,14 +45,14 @@ const Contact = () => {
             <div className='bg-[#E8EDF0] py-5 px-5 w-7/12'>
               <form action="">
                 <h2 className='text-[42px] font-semibold pb-4'>Contact Us</h2>
-                <div className='flex gap-4 items-center'>
-                  <div>
+                <div className='flex gap-4 items-center w-full'>
+                  <div className='w-6/12'>
                   <label htmlFor="fullName" className='text-[12px] font-semibold'>FULL NAME</label> <br />
-                  <input type="text" className='rounded px-4 py-2 outline-none' id='fullName' name='fullName' placeholder='Full Name'/>
+                  <input type="text" className='rounded px-4 py-2 outline-none w-full' id='fullName' name='fullName' placeholder='Full Name'/>
                   </div>
-                  <div className='pt-1.5'>
-                    <label htmlFor="fullName" className='text-[12px] font-semibold'>EMAIL ADDRESS</label> <br />
-                    <input type="text" className='rounded px-4 py-2 outline-none' id='fullName' name='fullName' placeholder='Email Address'/>
+                  <div className='pt-1.5 w-6/12'>
+                    <label htmlFor="mail" className='text-[12px] font-semibold'>EMAIL ADDRESS</label> <br />
+                    <input type="text" className='rounded px-4 py-2 outline-none w-full' id='mail' name='mail' placeholder='Email Address'/>
                   </div>
                 </div>
                 <div className='py-2.5'>
