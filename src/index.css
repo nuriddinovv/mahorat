@@ -532,3 +532,8 @@ code {
 .border-css{
   border-color: #3B5998;
 }
+.modalBg{
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 45;
+
+}

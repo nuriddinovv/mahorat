@@ -9,8 +9,10 @@ import FacebookSvg from '../assets/icons/FacebookSvg'
 import InstagrammSvg from '../assets/icons/InstagrammSvg'
 import TelegramSvg from '../assets/icons/TelegramSvg'
 import YouTubeSvg from '../assets/icons/YouTubeSvg'
+import Modal from '../components/Modal'
 const RootLayout = () => {
     const [scrolled, setScrolled] = useState(false)
+    const [showModal, setShowModal] = useState(false)
     useEffect(() => {
         function handleScroll() {
             if (window.scrollY > 0) setScrolled(true)
@@ -21,9 +23,12 @@ const RootLayout = () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
+    const handleModal = () =>{
+        setShowModal(true)
+    }
     return (
         <div>
-            <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-50 bg-white`}>
+            <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-40 bg-white`}>
                 <div className='container'>
                     <div className='nav-content flex items-center justify-between'>
                         <div className='project-logo'>
@@ -41,7 +46,7 @@ const RootLayout = () => {
                             <NavLink to={'contact'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Contact</NavLink>
                         </div>
                         <div className='nav-btn flex items-center gap-4'>
-                            <button className='bg-[#182B98] text-white px-6 py-2 rounded-md hover:bg-[#576ce3] duration-300'>Apply</button>
+                            <button className='bg-[#182B98] text-white px-6 py-2 rounded-md hover:bg-[#576ce3] duration-300' onClick={handleModal}>Apply</button>
                             {/* <div class="dropdown relative inline-block">
                                 <button class="dropbtn border-2 border-[#182B98] px-6 py-2 rounded-md">English</button>
                                 <div class="dropdown-content hidden absolute right-0 bg-[#f9f9f9] min-w-[160px] z-10 shadow-xl">
@@ -61,6 +66,7 @@ const RootLayout = () => {
                     </div>
                 </div>
             </nav>
+            {showModal ? <Modal setShowModal={setShowModal}/> :""}
             <Outlet />
             <footer>
                 <div className='container'>
