@@ -16,39 +16,38 @@ const Home = () => {
   return (
     <div>
       <section className='hero'>
-          <div className='hero-video pt-[25%]'>
+          <div className='hero-video 2xl:pt-[25%]'>
             <video autoPlay muted loop id="bg-video">
               <source src={bgVideo} type="video/mp4" />
             </video>
           </div>
         <div className='container'>
-          <div className='hero-content flex items-center h-full mt-[-1024px] pb-[240px] gap-4' >
-          <h1 className='text-[52px] text-white relative font-extrabold text-start '>Human capital is <br /> the foundation of societal <br /> development</h1>
+          <div className='hero-content flex items-center h-full mt-[-1024px] pb-[240px] 2xl:gap-5' >
+          <h1 className='about-motto text-[52px] text-white relative font-extrabold text-start '>Human capital is the foundation of societal  development</h1>
           <div>
 
             <div id="carouselExampleRide" className="carousel slide w-[670px]" data-bs-ride="true">
               <div className="carousel-inner">
                 <div className="carousel-item active w-[670px] h-[420px] carousel-item1" >
-                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5'>ETF ‘Torino Process’ project</h3>
-                  {/* <div className='ln-gr'></div> */}
+                  <h3 className='item1-text text-white font-bold text-[28px] h-full flex items-end px-5 pb-14'>ETF ‘Torino Process’ project</h3>
                 </div>
                 <div className="carousel-item carousel-item2 w-[670px] h-[420px]">
-                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5 text-start'>Journal Research in Adult Learning and Education (RALED)</h3>
+                  <h3 className='item2-text text-white font-bold text-[28px] h-full flex items-end px-5 pb-14 text-start'>Journal Research in Adult Learning and Education (RALED)</h3>
                 </div>
                 <div className="carousel-item carousel-item3 w-[670px] h-[420px]">
-                  <h3 className='text-white font-bold text-[28px] h-full flex items-end px-5 pb-5 text-start'>Creating a regulatory framework of dual training system</h3>
+                  <h3 className='item3-text text-white font-bold text-[28px] h-full flex items-end px-5 pb-5 text-start'>Creating a regulatory framework of dual training system</h3>
                 </div>
               </div>
               <div className='flex gap-0'>
               <div className='z-10'>
-              <button className="carousel-control-prev bg-[#F3AF24] h-[60px] w-[60px] mt-[360px] ml-[550px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <button className="btn1 carousel-control-prev bg-[#F3AF24] h-[60px] w-[60px] mt-[360px] ml-[550px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-left" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H3.707l10.147 10.146a.5.5 0 0 1-.708.708L3 3.707V8.5a.5.5 0 0 1-1 0z" />
                 </svg>
               </button>
               </div>
               <div className='z-10'>
-                <button className="carousel-control-next bg-[#F44749] h-[60px] w-[60px] mt-[360px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <button className="btn2 carousel-control-next bg-[#F44749] h-[60px] w-[60px] mt-[360px]" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>

@@ -52,7 +52,7 @@ const Experts = () => {
               <p className='text-center text-[#212529]'>Doctor of Science in Pedagogy. An expert on the quality of education system for more than 20 years. Expert and trainer in ensuring the quality of educational programs and systems for more than 10 years. Content developer. Project manager. Leading expert of “Management & Management” organization as with the rich experience in consulting, developing the international projects on enhancement of HRD as systematic approach on Quality Assurance establishment in management, establishing the standards of qualifications of the teachers and personnel in education systems for sustainable development of local educational providers.</p>
               <div className='flex items-center justify-center gap-2 py-2'>
                 <div className='border rounded-full px-3 text-[#3B5998] font-bold py-1 text-[20px] border-[#3B5998] hover:cursor-pointer border-css'>f</div>
-                <div className='border rounded-full px-2.5 text-[#D34836] font-bold py-1 text-[20px] border-[#D34836]'><a href="https://www.linkedin.com/in/khudaynazar-kurbanov-3b684b253/">in</a></div>
+                <div className='border rounded-full px-2.5 text-[#D34836] font-bold py-1 text-[20px] border-[#D34836]'><a href="https://www.linkedin.com/in/dr-feruza-rashidova-01438326/">in</a></div>
                 <div className='border rounded-full px-2.5 py-2 hover:cursor-pointer'>
                 <Mail2Svg/>
                 </div>
@@ -71,7 +71,7 @@ const Experts = () => {
               <p className='text-center text-[#212529]'>Holds MBA degree in Financial Management. 20+ years working experience for the International Organizations in the areas of Business Development, Education, Skills and Human Capital Development. Several years' experience in management of and consultancy to donor and international lending agency funded projects in Armenia, Georgia, Kazakhstan, Tajikistan, Turkmenistan and Uzbekistan.</p>
               <div className='flex items-center justify-center gap-2 py-2'>
                 <div className='border rounded-full px-3 text-[#3B5998] font-bold py-1 text-[20px] border-[#3B5998] hover:cursor-pointer border-css'>f</div>
-                <div className='border rounded-full px-2.5 text-[#D34836] font-bold py-1 text-[20px] border-[#D34836]'><a href="https://www.linkedin.com/in/khudaynazar-kurbanov-3b684b253/">in</a></div>
+                <div className='border rounded-full px-2.5 text-[#D34836] font-bold py-1 text-[20px] border-[#D34836]'><a href="https://www.linkedin.com/in/shukhrathoja-amanov-mba-916a3513/">in</a></div>
                 <div className='border rounded-full px-2.5 py-2 hover:cursor-pointer'>
                 <Mail2Svg/>
                 </div>

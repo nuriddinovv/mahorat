@@ -11,6 +11,7 @@ import TelegramSvg from '../assets/icons/TelegramSvg'
 import YouTubeSvg from '../assets/icons/YouTubeSvg'
 import Modal from '../components/Modal'
 import Deepen from '../assets/deepen.png'
+import MenuBarSvg from '../assets/icons/MenuBarSvg'
 const RootLayout = () => {
     const [scrolled, setScrolled] = useState(false)
     const [showModal, setShowModal] = useState(false)
@@ -32,12 +33,15 @@ const RootLayout = () => {
             <nav className={` ${scrolled && 'scrolled'} fixed top-0 left-0 w-full h-[120px] z-40 bg-white`}>
                 <div className='container'>
                     <div className='nav-content flex items-center justify-between'>
+                        <button className='menuBar-mobile'>
+                            <MenuBarSvg/>
+                        </button>
                         <div className='project-logo'>
                             <NavLink to={'/'}>
                                 <img className='h-auto max-w-[180px] max-h-[115px]' src={Logo} alt="mahorat-logo" />
                             </NavLink>
                         </div>
-                        <div className='nav-links flex gap-7'>
+                        <div className='nav-links flex gap-7 nav-link-mobile'>
                             <NavLink to={'/'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Home</NavLink>
                             <NavLink to={'about'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>About</NavLink>
                             <NavLink to={'services'} className={'nav-link-item text-[#182B98] font-bold hover:text-[#F44749] text-lg'}>Services</NavLink>
@@ -57,7 +61,7 @@ const RootLayout = () => {
                                     <p>O'zbekcha</p>
                                 </div>
                             </div> */}
-                            <select className='border-2 border-[#182B98] px-4 py-1.5 rounded-md text-["#182B98] cursor-pointer'>
+                            <select className='border-2 border-[#182B98] px-4 py-1.5 rounded-md text-["#182B98] cursor-pointer language-mobile'>
                                 <option value={'eng'} className='cursor-pointer text-center text-["#182B98]'>English</option>
                                 <option value={'rus'} className='cursor-pointer text-center'>Russian</option>
                                 <option value={'Узб'} className='cursor-pointer text-center'>Узбекча</option>
@@ -89,7 +93,7 @@ const RootLayout = () => {
                             <img src={Raled} alt="mahorat-tech" />
                         </div>
                         </a>
-                        <a href="#" target='_blank'>
+                        <a href="https://deepen.uz/" target='_blank'>
                         <div className='partner-cart bg-[#F1F1F1] border p-12 h-[233px] flex justify-center items-center'>
                             <img width={200} className='mt-[33px]' src={Deepen} alt="mahorat-tech" />
                         </div>

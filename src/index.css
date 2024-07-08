@@ -252,9 +252,7 @@ code {
 }
 
 .hero-video {
-  /* height: 1000px; */
   background-size: cover;
-  /* position: relative; */
   max-width: 100%;
   z-index: -1;
 }
@@ -388,21 +386,6 @@ code {
   margin-left: -23px;
 }
 
-/* .note-icon::before {
-  font-size: 23px;
-  content: "\e911";
-  top: 8px;
-  left: 8px;
-} */
-/* .info-tab::before,
-.info-tab::after {
-  display: inline-block;
-  color: #fff;
-  line-height: normal;
-  font-family: "icomoon";
-  position: absolute;
-} */
-
 .note-icon i::before {
   background: #1d7ead;
 }
@@ -432,29 +415,6 @@ code {
   bottom: -18px;
 }
 
-/* .info-tab i::before,
-.info-tab i::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  transform: rotateX(60deg);
-} */
-/* .note-icon::after {
-  font-size: 17px;
-  content: "\e912";
-  top: 9px;
-  left: 19px;
-} */
-/* .info-tab::before,
-.info-tab::after {
-  display: inline-block;
-  color: #fff;
-  line-height: normal;
-  font-family: "icomoon";
-  position: absolute;
-} */
 .about-card1 {
   background-image: url('./assets/about-card-bg1.png');
   background-size: cover;
@@ -480,31 +440,35 @@ code {
   background-size: cover;
   background-position: center;
 }
+
 .card-image3 {
   background-image: url('./assets/cardImg3.jpg');
   background-size: cover;
   background-position: center;
 }
-.contact-img{
+
+.contact-img {
   background-image: url('./assets/contact-img.png');
   background-size: cover;
 }
-.collapse{
+
+.collapse {
   visibility: visible;
 }
+
 .box {
   width: 200px;
   height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 100%;
-  border:2px solid transparent;
+  border: 2px solid transparent;
 }
 
 .box::before {
   content: '';
   position: absolute;
-  border-radius:100%;
+  border-radius: 100%;
   top: 0;
   left: 0;
   width: 100%;
@@ -524,16 +488,420 @@ code {
   border-top: 0;
   border-bottom: 0;
   border-left: 2px solid #287C9A;
-    border-right: 2px solid #287C9A;
+  border-right: 2px solid #287C9A;
 }
-.box:hover{
-  border:2px solid #246E89;
+
+.box:hover {
+  border: 2px solid #246E89;
 }
-.border-css{
+
+.border-css {
   border-color: #3B5998;
 }
-.modalBg{
+
+.modalBg {
   background: rgba(0, 0, 0, 0.7);
   z-index: 45;
+}
 
+
+/*media*/
+
+/*home header*/
+
+@media (max-width:1290px) {
+  .hero-content {
+    padding-bottom: 287px;
+  }
+
+  .hero-video {
+    padding-top: 476px;
+  }
+}
+
+@media (max-width:1265px) {
+  .hero-content {
+    padding: 74px 80px;
+    gap: 50px;
+  }
+
+  .about-motto {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width:1184px) {
+  .hero-video {
+    padding-top: 453px;
+  }
+
+  .carousel {
+    width: 598px;
+  }
+
+  .carousel-item1 {
+    width: 598px;
+  }
+
+  .carousel-item2 {
+    width: 598px;
+  }
+
+  .carousel-item3 {
+    width: 598px;
+  }
+
+  .btn1 {
+    margin-left: 478px;
+  }
+
+  .btn2 {
+    margin-right: 0;
+  }
+
+  .carousel-shadow {
+    width: 598px;
+  }
+}
+
+@media (max-width:1174px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 15px;
+
+  }
+
+  .hero-video {
+    padding-top: 435px;
+  }
+
+  .about-motto {
+    padding: 10px 150px 0;
+  }
+}
+
+@media (max-width:1127px) {
+  .about-motto {
+    font-size: 36px;
+  }
+
+  .about-motto {
+    padding: 53px 130px 0;
+  }
+}
+
+@media (max-width:1081px) {
+  .hero-video {
+    padding-top: 420px;
+  }
+
+  .about-motto {
+    padding: 64px 106px 0;
+  }
+}
+
+@media (max-width:1043px) {
+  .about-motto {
+    padding: 106px 87px 0;
+  }
+
+  .hero-video {
+    padding-top: 410px;
+  }
+}
+
+@media (max-width:1015px) {
+  .hero-video {
+    padding-top: 400px;
+  }
+
+  .about-motto {
+    padding: 130px 87px 0;
+  }
+}
+
+@media (max-width:995px) {
+  .about-motto {
+    padding: 137px 100px 0;
+    font-size: 30px;
+  }
+
+  .hero-video {
+    padding-top: 395px;
+  }
+}
+
+@media (max-width:983px) {
+  .carousel {
+    width: 472px;
+  }
+
+  .carousel-item1 {
+    background-size: contain;
+    width: 472px;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-item2 {
+    background-size: contain;
+    width: 472px;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-item3 {
+    background-size: contain;
+    width: 472px;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-shadow {
+    width: 472px;
+    margin-top: -205px
+  }
+
+  .item1-text {
+    padding-bottom: 9rem;
+  }
+
+  .item2-text {
+    padding-bottom: 141px;
+    font-size: 24px;
+  }
+
+  .item3-text {
+    font-size: 24px;
+  }
+
+  .btn2 {
+    margin-top: 255px;
+    margin-right: 0;
+  }
+
+  .btn1 {
+    margin-left: 352px;
+    margin-top: 255px;
+  }
+
+  .about-motto {
+    padding: 198px 100px 0;
+  }
+}
+
+@media (max-width:950px) {
+  .hero-video {
+    padding-top: 371px;
+  }
+
+  .about-motto {
+    padding: 198px 73px 0;
+  }
+}
+
+@media (max-width:917px) {
+  .about-motto {
+    padding: 244px 62px 0;
+  }
+}
+
+@media (max-width:851px) {
+  .about-motto {
+    padding: 281px 27px 0;
+  }
+
+  .hero-video {
+    padding-top: 352px;
+  }
+}
+
+@media (max-width:805px) {
+  .about-motto {
+    padding: 302px 4px 0;
+  }
+
+  .hero-video {
+    padding-top: 341px;
+  }
+}
+
+@media (max-width:783px) {
+  .hero-content {
+    align-items: start;
+  }
+
+  .about-motto {
+    font-size: 25px;
+    padding: 321px 0px 0;
+  }
+}
+
+@media (max-width:753px) {
+
+  .about-motto {
+    padding: 345px 0px 0;
+  }
+
+  .hero-video {
+    padding-top: 325px;
+  }
+}
+
+@media (max-width:730px) {
+  .about-motto {
+    padding: 356px 0px 0;
+  }
+
+  .hero-content {
+    gap: 7px;
+  }
+}
+
+@media (max-width:719px) {
+  .hero-video {
+    padding-top: 317px;
+  }
+
+  .about-motto {
+    padding: 362px 0px 0;
+  }
+
+}
+
+@media (max-width:706px) {
+  .carousel {
+    width: 355px;
+  }
+
+  .carousel-item1 {
+    width: 355px;
+  }
+
+  .carousel-item2 {
+    width: 355px;
+  }
+
+  .carousel-item3 {
+    width: 355px;
+  }
+
+  .item1-text {
+    font-size: 20px;
+    padding-bottom: 14rem;
+  }
+
+  .carousel-shadow {
+    width: 355px;
+    margin-top: -283px;
+  }
+
+  .btn2 {
+    margin-top: 183px;
+    margin-right: 0px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .btn1 {
+    margin-left: 247px;
+    margin-top: 183px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .hero-content {
+    padding: 74px 105px;
+  }
+
+  .about-motto {
+    padding: 414px 0px 0;
+  }
+}
+
+@media (max-width:647px) {
+  .about-motto {
+    padding: 429px 0px 0;
+  }
+
+  .hero-content {
+    padding: 74px 67px;
+  }
+}
+
+@media (max-width:627px) {
+  .about-motto {
+    padding: 458px 0px 0;
+  }
+
+  .hero-video {
+    padding-top: 290px;
+  }
+}
+
+@media (max-width:605px) {
+  .carousel {
+    visibility: hidden;
+  }
+
+  .carousel-shadow {
+    visibility: hidden;
+  }
+
+  .about-motto {
+    font-size: 30px;
+    padding: 580px 0px 0;
+  }
+}
+
+@media (max-width:560px) {
+  .hero-video {
+    padding-top: 272px;
+  }
+}
+
+@media (max-width:480px) {
+  .hero-video {
+    padding-top: 248px;
+  }
+
+  .about-motto {
+    padding: 620px 0px 0;
+  }
+}
+
+@media (max-width:410px) {
+  .about-motto {
+    font-size: 25px;
+    padding: 667px 0px 0;
+  }
+
+  .hero-video {
+    padding-top: 230px;
+  }
+}
+
+@media (max-width:370px) {
+  .about-motto {
+    font-size: 20px;
+    padding: 696px 0px 0;
+  }
+
+  .hero-video {
+    padding-top: 215px;
+  }
+}
+
+/* navbar */
+.menuBar-mobile{
+  display: none;
+}
+@media (max-width:1080px){
+  .nav-link-mobile{
+    display: none;
+  }
+  .language-mobile{
+    display: none;
+  }
+  .menuBar-mobile{
+    display: block;
+  }
 }
